@@ -17,13 +17,15 @@ To change the prefix for commands, simply replace "/" with whatever your preferr
 
 ## Command usage
 
-**/avatar** - Displays a URL to your profile picture.
- **/beep** - Boop.
- **/commands** - Displays this command list.
- **/help** - Information on how to setup/configure the bot as well as a support Discord link.
- **/ping** - Your current connection to the bot in miliseconds.
- **/prune** - Prunes up to 99 messages.
- **/whois** - Information about your account.
+ - **/avatar** - Displays a URL to your profile picture.  
+ - **/beep** - Boop.  
+ - **/commands** - Displays this command list. 
+ -  **/help** - Information on how to setup/configure the bot as well as a support Discord link. 
+   - **/ping** - Your current connection to the bot in miliseconds. 
+   - **/prune** - Prunes up to 99 messages. 
+    - **/whois** - Information about your account.
+
+ 
 ## Further assistance
 Still have a question unanswered? Join our Discord and navigate to **#support** and we will try our best to answer it. https://discord.gg/KcpEXTK
 
