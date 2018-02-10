@@ -2,6 +2,6 @@ module.exports = {
 	name: 'ping',
 	description: 'Ping!',
 	execute(message) {
-		message.channel.send(new Date().getTime() - message.createdTimestamp + "ms");   
+		message.channel.send("xms").then(msg => msg.edit(msg.createdTimestamp - message.createdTimestamp + "ms"));
 	},
 };
