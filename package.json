@@ -1,0 +1,28 @@
+{
+  "name": "venk-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot.",
+  "main": "bot.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "discord": "^0.8.2",
+    "discord.io": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VenkSociety/Venk-Bot.git"
+  },
+  "author": "VenkSociety",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VenkSociety/Venk-Bot/issues"
+  },
+  "homepage": "https://github.com/VenkSociety/Venk-Bot#readme"
+}
