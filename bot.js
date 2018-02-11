@@ -1,10 +1,8 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const { prefix, token } = require('./config.json');
-
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
-
 const commandFiles = fs.readdirSync('./commands');
 
 for (const file of commandFiles) {
@@ -19,7 +17,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
-
+        if (message.channel.type === "dm") return; // Ignore DM channels.
 	const args = message.content.slice(prefix.length).split(/ +/);
 	const command = args.shift().toLowerCase();
 
@@ -39,5 +37,6 @@ client.on('guildMemberAdd', member => {
   if (!channel) return;
   channel.send(`:airplane: ${member} has joined the Discord!`);
 });
+
 
 client.login(token);
