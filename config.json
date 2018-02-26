@@ -1,4 +1,5 @@
 {
     "prefix": "/",
     "token": "YOUR-BOT-TOKEN"
+    "welcome_msg": "support"
 }
