@@ -10,10 +10,15 @@ Configuration is as easy as editing a single file. No coding knowledge needed!
     {
     "prefix": "/", 
     "token": "YOUR-BOT-TOKEN"
+    "welcome_msg": "general"
     }
-In order for the bot to work, you'll need to gather your bot's token and replace "YOUR-BOT_TOKEN".
+    
+In order for the bot to work, you'll need to gather your bot's token and replace "YOUR-BOT-TOKEN" with your bot's token.
 
 To change the prefix for commands, simply replace "/" with whatever your preferred prefix is. E.g. ;help would result in ";".
+
+By default, the channel where the bot will post welcome messages is "general". Simply replace "general" with the channel you'd like the messages to be sent to.
+
 
 ## Command usage
 
