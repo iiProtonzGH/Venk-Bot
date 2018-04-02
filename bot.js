@@ -1,6 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
-const { prefix, token, welcome_msg } = require('./config.json');
+const { prefix, token, welcome_msg, default_role } = require('./config.json');
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands');
@@ -32,10 +32,17 @@ client.on('message', message => {
 	}
 });
 
+client.on("message", (message) => {
+  if (message.content.startsWith("/config")) {
+    message.channel.send("Test."); // Coming soon!
+  }
+});
+
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find('name', (welcome_msg));
   if (!channel) return;
   channel.send(`:airplane: ${member} has joined the Discord!`);
+  member.addRole(member.guild.roles.find('name', (default_role)))
 });
 
 
