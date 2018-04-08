@@ -1,6 +1,6 @@
 {
     "prefix": "/",
-    "token": "YOUR-BOT-TOKEN"
-    "welcome_msg": "general"
+    "token": "YOUR-BOT-TOKEN",
+    "welcome_msg": "general",
     "default_role": "member"
 }
