@@ -33,8 +33,28 @@ client.on('message', message => {
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("/config")) {
-    message.channel.send("Test."); // Coming soon!
+  if (message.content.startsWith("/grr")) {
+    message.channel.send("Mad.");
+  }
+
+  else if (message.content.startsWith("/frrsux")) {
+    message.channel.send(`${message.author.username} agrees that Frrquent sux.`);
+  }
+  
+  else if (message.content.includes("ur mom")) {
+    message.channel.send("no u");
+  }
+
+  else if (message.content.includes("ur gay")) {
+    message.channel.send("no u :b:ig gay");
+  }
+
+  else if (message.content.includes("u mom")) {
+    message.channel.send("no u");
+  }
+
+  else if (message.content.includes("u gay")) {
+    message.channel.send("no u :b:ig gay");
   }
 });
 
